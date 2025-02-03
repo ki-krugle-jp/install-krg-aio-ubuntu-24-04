@@ -88,3 +88,7 @@ cd krugle-aio-installer
 sudo ./install.sh
 
 ```
+
+## Default User
+http://<ip>:8080](http://<Krugleが稼働しているシステム>:8080/install/welcome.html
+
