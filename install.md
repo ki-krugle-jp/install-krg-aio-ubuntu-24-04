@@ -31,11 +31,18 @@ sudo systemctl reboot
 
 ## Download AIO Image
 
-https://downloads.krugle.org/enterprise/
+Define username(dluser) and password(dlpass) for download site.
 
 ```bash
 dluser=""
 dlpass=""
+```
+
+
+
+https://downloads.krugle.org/enterprise/
+
+```bash
 wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz
 ```
 
