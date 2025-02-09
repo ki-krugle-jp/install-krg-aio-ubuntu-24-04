@@ -29,6 +29,12 @@ sudo apt-get install -y nvidia-open
 sudo systemctl reboot
 ```
 
+## Check GPU 
+
+```bash
+nvidia-smi
+```
+
 ## Download AIO Image
 
 Define username(dluser) and password(dlpass) for download site.
