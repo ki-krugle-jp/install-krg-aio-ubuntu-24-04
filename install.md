@@ -35,7 +35,7 @@ https://downloads.krugle.org/enterprise/
 
 ## Mandatory Packages
 ```bash
-sudo apt install systemd tar ufw tee -y
+sudo apt install -y ufw
 ```
 
 Enable & Start ufw service
