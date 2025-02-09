@@ -44,6 +44,7 @@ https://downloads.krugle.org/enterprise/
 
 ```bash
 wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz.md5sum.txt
 ```
 
 ## Mandatory Packages
