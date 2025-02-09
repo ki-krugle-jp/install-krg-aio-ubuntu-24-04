@@ -33,6 +33,12 @@ sudo systemctl reboot
 
 https://downloads.krugle.org/enterprise/
 
+```bash
+dluser=""
+dlpass=""
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz
+```
+
 ## Mandatory Packages
 ```bash
 sudo apt install -y ufw
