@@ -47,6 +47,11 @@ wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterpr
 wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz.md5sum.txt
 ```
 
+## Check md5 checksum
+```bash
+md5sum -c Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz.md5sum.txt
+```
+
 ## Mandatory Packages
 ```bash
 sudo apt install -y ufw
