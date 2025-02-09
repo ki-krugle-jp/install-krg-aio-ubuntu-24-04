@@ -99,6 +99,12 @@ openssl req -in server.csr -text -noout
 
 ```
 
+```bash
+ls krugle-aio-installer
+cp -v server.crt krugle-aio-installer/krugle/kng/kse/ssl/server.crt
+cp -v server.key krugle-aio-installer/krugle/kng/kse/ssl/server.key
+```
+
 ## Executes AIO Installer
 
 ```bash
