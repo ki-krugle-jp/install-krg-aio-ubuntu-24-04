@@ -61,6 +61,8 @@ Enable & Start ufw service
 sudo systemctl enable ufw
 sudo systemctl start ufw
 sudo ufw --force enable
+sudo ufw allow 22
+sudo ufw reload
 ```
 
 ## Extract AIO installer tarball
