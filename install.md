@@ -22,13 +22,6 @@ sudo apt-get -y install cuda-toolkit-12-8
 sudo apt-get install -y nvidia-open
 ```
 
-
-## Reboot the Machine
-
-```bash
-sudo systemctl reboot
-```
-
 ## Check GPU 
 
 ```bash
