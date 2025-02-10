@@ -125,6 +125,9 @@ openssl req -in server.csr -text -noout
 Create subjectnames.txt
 EC2の場合、DNS名と、Global IPとPrivate IPをSNAに定義する。
 ```bash
+subjectAltName = DNS:<fqdn>, IP:<Global IP>, IP:<Private IP>
+
+Sample:
 subjectAltName = DNS:test.com, DNS:*.example.com, DNS:bar.com, IP:172.17.0.2
 ```
 
