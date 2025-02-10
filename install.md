@@ -76,6 +76,7 @@ PEM形式の証明書ファイルkrugle-aio-installer/krugle/kng/kse/ssl/server.
 
 ### Generate Private Cert
 
+
 ```
 openssl genpkey -algorithm RSA -out server.key -aes256 -pass pass:yourpassword
 openssl genpkey -algorithm RSA -out server.key
@@ -97,6 +98,19 @@ openssl req -in server.csr -text -noout
 
 
 ```
+
+#### SNA対応の場合
+
+Create subjectnames.txt
+```bash
+subjectAltName = DNS:test.com, DNS:*.example.com, DNS:bar.com, IP:172.17.0.2
+```
+
+```
+openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt -extfile subjectnames.txt
+```
+
+#### Copy cert and key
 
 ```bash
 ls krugle-aio-installer
