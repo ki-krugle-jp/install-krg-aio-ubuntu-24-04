@@ -78,7 +78,6 @@ PEM形式の証明書ファイルkrugle-aio-installer/krugle/kng/kse/ssl/server.
 
 
 ```
-openssl genpkey -algorithm RSA -out server.key -aes256 -pass pass:yourpassword
 openssl genpkey -algorithm RSA -out server.key
 openssl req -new -key server.key -out server.csr
 
@@ -101,7 +100,28 @@ openssl req -in server.csr -text -noout
 
 #### SNA対応の場合
 
+```
+openssl genpkey -algorithm RSA -out server.key
+openssl req -new -key server.key -out server.csr
+
+- Country Name (C): 国コード (例: JP)
+- State or Province Name (ST): 都道府県 (例: Tokyo)
+- Locality Name (L): 市区町村 (例: Shinjuku)
+- Organization Name (O): 組織名 (例: Example Inc.)
+- Organizational Unit Name (OU): 部署名 (例: IT Department)
+- Common Name (CN): サーバーのドメイン名 (例: example.com) Krugle AIO Server Private Certification
+- Email Address: メールアドレス (任意)
+
+openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
+
+openssl x509 -in server.crt -text -noout
+openssl rsa -in server.key -check
+openssl req -in server.csr -text -noout
+
+```
+
 Create subjectnames.txt
+EC2の場合、DNS名と、Global IPとPrivate IPをSNAに定義する。
 ```bash
 subjectAltName = DNS:test.com, DNS:*.example.com, DNS:bar.com, IP:172.17.0.2
 ```
