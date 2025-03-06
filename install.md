@@ -198,6 +198,16 @@ Address         Port        Address         Port
 PS C:\Users\ki-krugle-jp\Krugle>
 ```
 
+## Allow tcp ports for Krugle services on Windows Defender Firewall  (WSL2 on Windows Only)
+
+### Run the Windows Defender Firewall with Advanced Security App
+### Select Inbound Rules
+### Click New Rule
+### Select Port for Rule Type
+### Select TCP, Select Specific local ports and add '80, 443, 5000, 8080, 9100, 5668, 9100'
+### Select Allow the connection
+### Check the boxies for Domain, Private and Public
+### Add name as Krugle Services
 
 ## Default User
 http://<ip>:8080](http://<Krugleが稼働しているシステム>:8080/install/welcome.html
