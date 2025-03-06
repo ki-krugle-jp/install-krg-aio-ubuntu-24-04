@@ -153,6 +153,41 @@ sudo ./install.sh
 ```
 
 ## portproxy (WSL2 on Windows Only)
+Create portproxy.bat
+
+```
+@echo off
+netsh interface portproxy add v4tov4 listenport=443 listenaddress=0.0.0.0 connectport=443 connectaddress=172.22.123.246
+netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=172.22.123.246
+netsh interface portproxy add v4tov4 listenport=9100 listenaddress=0.0.0.0 connectport=9100 connectaddress=172.22.123.246
+netsh interface portproxy add v4tov4 listenport=5000 listenaddress=0.0.0.0 connectport=5000 connectaddress=172.22.123.246
+netsh interface portproxy add v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=172.22.123.246
+netsh interface portproxy add v4tov4 listenport=5668 listenaddress=0.0.0.0 connectport=5668 connectaddress=172.22.123.246
+```
+
+## Executes portproxy (WSL2 on Windows Only)
+```
+PS C:\Users\ki-krugle-jp\Krugle> .\portproxy.bat
+PS C:\Users\ki-krugle-jp\Krugle> 
+```
+
+## Check portproxy (WSL2 on Windows Only)
+```
+PS C:\Users\ki-krugle-jp\Krugle> netsh interface portproxy show all
+
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+0.0.0.0         443         172.22.123.246  443
+0.0.0.0         80          172.22.123.246  80
+0.0.0.0         9100        172.22.123.246  9100
+0.0.0.0         5000        172.22.123.246  5000
+0.0.0.0         8080        172.22.123.246  8080
+0.0.0.0         5668        172.22.123.246  5668
+
+PS C:\Users\ki-krugle-jp\Krugle>
+```
 
 
 ## Default User
