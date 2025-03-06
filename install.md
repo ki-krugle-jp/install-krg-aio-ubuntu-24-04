@@ -152,6 +152,9 @@ sudo ./install.sh
 
 ```
 
+## portproxy (WSL2 on Windows Only)
+
+
 ## Default User
 http://<ip>:8080](http://<Krugleが稼働しているシステム>:8080/install/welcome.html
 
