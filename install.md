@@ -225,6 +225,8 @@ PS C:\Users\ki-krugle-jp\Krugle>
 7. Check the boxies for Domain, Private and Public
 8. Add name as Krugle Services
 
-## Default User
-http://<ip>:8080](http://<Krugleが稼働しているシステム>:8080/install/welcome.html
+## Initial Setup
+https://<Krugleが稼働しているシステムのIP Address>/admin/install/welcome.html
+
+Old URL: http://<Krugleが稼働しているシステム>:8080/install/welcome.html
 
