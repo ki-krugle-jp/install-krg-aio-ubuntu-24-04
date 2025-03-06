@@ -198,6 +198,22 @@ Address         Port        Address         Port
 PS C:\Users\ki-krugle-jp\Krugle>
 ```
 
+## Register portproxy.bat as startup task
+1. Run taskschd.msc
+2. Click "Create Task" from Actions Menu
+3. Add "Port Proxy for Krugle Services" into Name box
+4. Check the "Run with highest privileges" box.
+5. Click the "Triggers" Tab.
+6. Click the New
+7. Select "At log on" from "Begin the task" menu
+8. (Optional) Select specific user or Any user
+9. Click the OK button
+10. Click the "Actions" tab
+11. Click the New
+12. Select "Start a program"
+13. Specify the script file portproxy.bat at Program/script box
+14. Click the "OK" button and close
+
 ## Allow tcp ports for Krugle services on Windows Defender Firewall  (WSL2 on Windows Only)
 
 1. Run the Windows Defender Firewall with Advanced Security App
