@@ -153,7 +153,16 @@ sudo ./install.sh
 ```
 
 ## portproxy (WSL2 on Windows Only)
-Create portproxy.bat
+###Check WSL2 VM IP address
+
+```
+root@antares-1:~/krugle-aio-installer# ip addr show eth0|grep 'inet '
+    inet 172.22.123.246/20 brd 172.22.127.255 scope global eth0
+root@antares-1:~/krugle-aio-installer#
+```
+
+
+###Create portproxy.bat
 
 ```
 @echo off
