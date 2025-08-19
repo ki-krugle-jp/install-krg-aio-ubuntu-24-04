@@ -42,13 +42,13 @@ dlpass=""
 https://downloads.krugle.org/enterprise/
 
 ```bash
-wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz
-wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/enterprise/Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz.md5sum.txt
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz.md5sum.txt
 ```
 
 ## Check md5 checksum
 ```bash
-md5sum -c Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz.md5sum.txt
+md5sum -c Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz.md5sum.txt
 ```
 
 ## Mandatory Packages
