@@ -42,7 +42,7 @@ dlpass=""
 https://downloads.krugle.org/enterprise/
 
 ```bash
-wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250830T095821.tgz
 wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz.md5sum.txt
 ```
 
