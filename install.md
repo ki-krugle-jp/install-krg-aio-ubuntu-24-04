@@ -42,13 +42,13 @@ dlpass=""
 https://downloads.krugle.org/enterprise/
 
 ```bash
-wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250830T095821.tgz
-wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz.md5sum.txt
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.6-20251028T160233.tgz
+wget --user=${dluser}  --password=${dlpass} https://downloads.krugle.org/Krugle-AiO-installer-enterprise-0.7.6-20251028T160233.tgz.md5sum.txt
 ```
 
 ## Check md5 checksum
 ```bash
-md5sum -c Krugle-AiO-installer-enterprise-0.7.3-20250808T030724.tgz.md5sum.txt
+md5sum -c Krugle-AiO-installer-enterprise-0.7.6-20251028T160233.tgz.md5sum.txt
 ```
 
 ## Mandatory Packages
@@ -67,7 +67,7 @@ sudo ufw reload
 
 ## Extract AIO installer tarball
 ```bash
-tar xvzf Krugle-AiO-installer-enterprise-0.6.4-20250118T111026.tgz
+tar xvzf Krugle-AiO-installer-enterprise-0.7.6-20251028T160233.tgz
 ```
 
 ## TLS Certificate 
