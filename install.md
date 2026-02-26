@@ -151,6 +151,55 @@ sudo ./install.sh
 
 ```
 
+## Change MODEL
+
+35Bモデルのお客様は、/opt/krugle/.envのMODEL_TYPEをkrugle-code-35b-chatに変更してください。
+変更後、サービスを再起動してください。
+
+
+```shell
+root@demo1-aio:/opt/krugle# cat .env
+# ------------------------------
+# Krugle Search
+# ------------------------------
+KRUGLE_DATA_HOME=/data/krugle
+SOLR_IMG_VERSION=8.5.0
+HUB_IMG_VERSION=6.2.11
+KSE_IMG_VERSION=6.2.11
+KSE_NG_IMG_VERSION=ng-7.0.0
+PROXY_IMG_VERSION=6.2.11
+REDIS_IMG_VERSION=7.0.10
+
+# ------------------------------
+# Krugle SCMI
+# ------------------------------
+SCMI_DATA_HOME=/data/krugle/scmi
+
+# ------------------------------
+# KrugleAI Core
+# ------------------------------
+KRUGLE_AI_DATA_HOME=/data/krugle/ai
+# For Shasta
+AI_BASE_URL=http://30.20.55.1:5668
+MODEL_TYPE=krugle-code-35b-chat
+#MODEL_TYPE=krugle-code-10b
+# For legacy KrugleAI Base
+# AI_BASE_URL=http://30.20.55.1:5666/v1
+# MODEL_TYPE=7b
+
+# For legacy KrugleAI Base Pro Intel GPU
+# AI_BASE_URL=http://30.20.55.1:5666/v1
+# MODEL_TYPE=krugle-code-10b-pro
+MONGO_USERNAME=root
+MONGO_PASSWORD=krugle94great
+REDIS_PASSWORD=krugle
+AI_CORE_RUN_MODE=prod
+AI_CORE_PORT=9999
+LOG_LEVEL=info
+AI_CORE_VER=0.8.0
+root@demo1-aio:/opt/krugle#
+```
+
 ## Initial Setup
 https://<Krugleが稼働しているシステムのIP Address>/admin/install/welcome.html
 
