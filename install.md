@@ -1,28 +1,24 @@
+## Check GPU　（nvidia-smiコマンドでGPUの認識確認。コマンドがない場合は、CUDA Toolkitやドライバーをインストール） 
 
-# Driver
-
-https://docs.nvidia.com/cuda/cuda-installation-guide-linux/
-
-https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=24.04&target_type=deb_network
-
-
-
-## CUDA Toolkit Installer
+```bash
+nvidia-smi
+```
+## CUDA Toolkit Installer (GPUドライバーがPre-Installされているフレーバの場合は不要）
 ```bash
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
 sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-8
+sudo apt-get -y install cuda-toolkit-12-9
 
 ```
-##  Driver Installer
+##  Driver Installer  (GPUドライバーがPre-Installされているフレーバの場合は不要）
 
 ### Install Open Kernel Module
 ```bash
 sudo apt-get install -y nvidia-open
 ```
 
-## Check GPU 
+## Check GPU　（nvidia-smiコマンドでGPUの認識確認） 
 
 ```bash
 nvidia-smi
